@@ -1,0 +1,43 @@
+/* ===================================
+	 MEDIA
+	 @mixin ================================== */
+/* ===================================
+	 TRANSITION
+	 @mixin ================================== */
+.transition-off {
+  transition: none !important; }
+
+/* ===================================
+	 FONT
+	 @mixin ================================== */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px -15px -30px; }
+  .grid-item {
+    flex: 1 0 calc(33.333% - 30px);
+    max-width: calc(33.333% - 30px);
+    margin: 0 15px 30px; }
+    @media only screen and (max-width: 1199px) {
+      .grid-item {
+        flex-basis: calc(50% - 30px);
+        max-width: calc(50% - 30px); } }
+
+.title {
+  display: flex; }
+  .title-name {
+    flex: 0 0 auto;
+    text-transform: uppercase;
+    color: #00BCD4;
+    transition: all 0.3s ease; }
+    .title-name:hover {
+      color: #00838F; }
+  .title-price {
+    flex: 1 0 auto;
+    text-align: end; }
+
+.load-more-container {
+  display: flex;
+  margin: 15px 0;
+  justify-content: flex-end; }

@@ -1,0 +1,33 @@
+@import ../../styles/partials/index.sass
+
+.grid
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin: 15px -15px -30px
+	&-item
+		flex: 1 0 calc(33.333% - 30px)
+		max-width: calc(33.333% - 30px)
+		margin: 0 15px 30px
+		+md
+			flex-basis: calc(50% - 30px)
+			max-width: calc(50% - 30px)
+
+.title
+	display: flex
+	&-name
+		flex: 0 0 auto
+		text-transform: uppercase
+		color: $cyan
+		+trs
+		&:hover
+			color: $cyan800
+	&-price
+		flex: 1 0 auto
+		text-align: end
+		
+.load-more-container
+	display: flex
+	margin: 15px 0
+	justify-content: flex-end
+
